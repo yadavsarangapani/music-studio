@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Music Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="home" class="page active">
+  <h1>WELCOME TO THE WORLD OF MUSIC</h1>
+  <div class="buttons">
+    <button onclick="openPage('piano')">🎹 Piano</button>
+    <button onclick="openPage('drums')">🥁 Drums</button>
+    <button class="pandrum" onclick="openPage('pandrum')">🎹🥁 PanDrum</button>
+  </div>
+</div>
+
+<div id="piano" class="page">
+  <h2>🎹 Piano</h2>
+  <div id="pianoKeys" class="piano"></div>
+  <p>🎼 Sustain: Hold SPACEBAR</p>
+  <button onclick="openPage('home')">⬅ Back</button>
+</div>
+
+<div id="drums" class="page">
+  <h2>🥁 Drums</h2>
+  <div id="drumSet" class="drum-set"></div>
+  <button onclick="openPage('home')">⬅ Back</button>
+</div>
+
+<div id="pandrum" class="page">
+  <h2>🎹🥁 PanDrum Mode</h2>
+  <div id="pianoKeysPan" class="piano"></div>
+  <div id="drumSetPan" class="drum-set"></div>
+  <p>🎼 Sustain: Hold SPACEBAR</p>
+  <button onclick="openPage('home')">⬅ Back</button>
+</div>
+
+<script src="App.js"></script>
+</body>
+</html>

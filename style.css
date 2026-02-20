@@ -1,0 +1,64 @@
+body{
+  margin:0;
+  font-family:Georgia, serif;
+  background:linear-gradient(135deg,#111,#1f1f35);
+  color:white;
+  text-align:center;
+}
+
+.page{ display:none; padding:20px; }
+.active{ display:block; }
+
+.buttons button{
+  padding:15px 35px;
+  margin:15px;
+  border-radius:40px;
+  border:none;
+  font-size:18px;
+  background:gold;
+  cursor:pointer;
+  transition:0.4s;
+}
+.buttons button:hover{
+  background:orange;
+  transform:scale(1.1);
+}
+
+.piano{
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.key{
+  width:80px;
+  height:250px;
+  background:white;
+  border:2px solid black;
+  margin:3px;
+  cursor:pointer;
+  font-weight:bold;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding-bottom:10px;
+}
+.key.active{ background:gold; }
+
+.drum-set{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.drum{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  background:brown;
+  margin:10px;
+  line-height:110px;
+  cursor:pointer;
+}
+.drum.active{ background:gold; }
